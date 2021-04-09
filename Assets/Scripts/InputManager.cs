@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-
-    public static InputManager instance { get; private set; }
+    public static InputManager instance;
 
     private Controls controls;
 
-    public Vector2 move { get; private set; }
-    public Vector2 look { get; private set; }
+    public Vector2 move;
 
-    public float moveAmount { get; private set; }
+    public Vector2 look;
 
-    void Awake()
+    public bool jumpDown = false;
+    public bool fireDown = false;
+    public bool aimDown = false;
+
+    private void Awake()
     {
         if (instance != null)
         {
@@ -26,6 +28,11 @@ public class InputManager : MonoBehaviour
         }
 
         controls = new Controls();
+
+    }
+
+    private void OnEnable()
+    {
         controls.Enable();
     }
 
@@ -36,14 +43,17 @@ public class InputManager : MonoBehaviour
 
     void Start()
     {
-        controls.Locomotion.Move.performed += controls =>
-        {
-            move = controls.ReadValue<Vector2>();
-            moveAmount = Mathf.Clamp01(Mathf.Abs(move.x) + Mathf.Abs(move.y));
-        };
-
+        controls.Locomotion.Move.performed += controls => move = controls.ReadValue<Vector2>();
         controls.Locomotion.Look.performed += controls => look = controls.ReadValue<Vector2>();
+
+        controls.Locomotion.Jump.performed += controls => jumpDown = true;
+        controls.Locomotion.Jump.canceled += controls => jumpDown = false;
+
+        controls.Locomotion.Fire.performed += controls => fireDown = true;
+        controls.Locomotion.Fire.canceled += controls => fireDown = false;
+
+        controls.Locomotion.Aim.performed += controls => aimDown = true;
+        controls.Locomotion.Aim.canceled += controls => aimDown = false;
+
     }
-
-
 }
