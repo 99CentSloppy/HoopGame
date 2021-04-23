@@ -7,8 +7,7 @@ public class Reset : MonoBehaviour
     
     void Start()
     {
-        if(Controls.LocomotionActions = Space){
-            
+        
     }
 
     // Update is called once per frame
