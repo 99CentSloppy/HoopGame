@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class Register : MonoBehaviour
 {
-    public GameObject stage1;
-    public GameObject stage2;
-    public GameObject ball;
-    bool stage1Bool;
-    bool stage2Bool;
-    int shotTaken= 0;
-   void HandleRegister()
+    private bool stage1 = false;
+    private bool stage2 = false;
+
+    public void UpdateStage()
     {
-        if(stage1Bool == true)
+        if(!stage1)
         {
-            shotTaken +=1;
-            
+            stage1 = true;
+            Debug.Log("Stage 1 complete");
+
+        } else if(!stage2)
+        {
+            stage2 = true;
+            Debug.Log("stage 2 complete");
+            UpdateScore();
         }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateScore()
     {
-       
+        Debug.Log("score detected");
+        //increase the score
+        //reset the stages
     }
+
 }
