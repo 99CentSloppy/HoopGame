@@ -252,10 +252,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
   look: {x: 0, y: 0}
-  teleport: {x: 0, y: 0}
+  teleportPos1: 0
+  teleportPos2: 0
+  teleportPos3: 0
+  teleportPos4: 0
   fireDown: 0
   aimDown: 0
-  reset: 0
+  resetSpace: 0
 --- !u!4 &451977384
 Transform:
   m_ObjectHideFlags: 0
@@ -284,7 +287,7 @@ GameObject:
   - component: {fileID: 696019466}
   m_Layer: 0
   m_Name: Position 4
-  m_TagString: Untagged
+  m_TagString: Teleportation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,7 +472,7 @@ GameObject:
   - component: {fileID: 1029179897}
   m_Layer: 0
   m_Name: Position 1
-  m_TagString: Untagged
+  m_TagString: Teleportation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,7 +565,7 @@ GameObject:
   - component: {fileID: 1059275797}
   m_Layer: 0
   m_Name: Position 2
-  m_TagString: Untagged
+  m_TagString: Teleportation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -838,6 +841,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1542171102}
   - component: {fileID: 1542171101}
+  - component: {fileID: 1542171103}
+  - component: {fileID: 1542171107}
+  - component: {fileID: 1542171106}
+  - component: {fileID: 1542171105}
+  - component: {fileID: 1542171104}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -879,6 +887,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542171103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ccbff0f053e304fa06a7077b327886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &1542171104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61bf132357859fb44bd74cde18c32267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPosition4: {x: 0, y: 0, z: -10}
+--- !u!114 &1542171105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa8bc68f78d61442be26665fcc7f373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPosition3: {x: -10, y: 0, z: 0}
+--- !u!114 &1542171106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fb3a8183de3314595d7d01f74008aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPosition2: {x: 0, y: 0, z: 10}
+--- !u!114 &1542171107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542171100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7160d5384aafa40940961b2a51bc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPosition1: {x: 10, y: 0, z: 0}
 --- !u!1 &2119982403
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +966,7 @@ GameObject:
   - component: {fileID: 2119982404}
   m_Layer: 0
   m_Name: Position 3
-  m_TagString: Untagged
+  m_TagString: Teleportation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

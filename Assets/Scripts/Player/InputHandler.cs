@@ -12,11 +12,13 @@ public class InputHandler : MonoBehaviour
 
     public Vector2 look;
 
-    public Vector2 teleport;
-
+    public bool teleportPos1 = false;
+    public bool teleportPos2 = false;
+    public bool teleportPos3 = false;
+    public bool teleportPos4 = false;
     public bool fireDown = false;
     public bool aimDown = false;
-    public bool reset = false;
+    public bool resetSpace = false;
 
     private void Awake()
     {
@@ -47,13 +49,24 @@ public class InputHandler : MonoBehaviour
     {
      
         controls.Locomotion.Look.performed += controls => look = controls.ReadValue<Vector2>();
-        controls.Locomotion.Teleport.performed += controls => teleport = controls.ReadValue<Vector2>();
 
         controls.Locomotion.Shoot.performed += controls => fireDown = true;
         controls.Locomotion.Shoot.canceled += controls => fireDown = false;
 
-        controls.Locomotion.Reset.performed += controls => reset = true;
-        controls.Locomotion.Reset.canceled += controls => reset = false;
+        controls.Locomotion.Reset.performed += controls => resetSpace = true;
+
+        controls.Locomotion.TeleportPos1.performed += controls => teleportPos1 = true;
+        controls.Locomotion.TeleportPos1.canceled += controls => teleportPos1 = false;
+
+        controls.Locomotion.TeleportPos2.performed += controls => teleportPos2 = true;
+        controls.Locomotion.TeleportPos2.canceled += controls => teleportPos2 = false;
+
+        controls.Locomotion.TeleportPos3.performed += controls => teleportPos3 = true;
+        controls.Locomotion.TeleportPos3.canceled += controls => teleportPos3 = false;
+
+        controls.Locomotion.TeleportPos4.performed += controls => teleportPos4 = true;
+        controls.Locomotion.TeleportPos4.canceled += controls => teleportPos4 = false;
+
 
 
         //revmove "//" when the control is added 

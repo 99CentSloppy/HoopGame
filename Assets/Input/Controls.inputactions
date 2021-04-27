@@ -30,9 +30,33 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Teleport",
+                    "name": "TeleportPos1",
                     "type": "PassThrough",
                     "id": "143b2a00-3118-463b-81ec-89d4fe377200",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TeleportPos2",
+                    "type": "PassThrough",
+                    "id": "f85dd838-e35d-44cf-8e67-9a7631a9fc96",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TeleportPos3",
+                    "type": "PassThrough",
+                    "id": "654b44b1-d9f7-457a-8057-020eb78eb795",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TeleportPos4",
+                    "type": "PassThrough",
+                    "id": "4d9aa048-f302-4ac5-a0b2-d40272548daa",
                     "expectedControlType": "Vector3",
                     "processors": "",
                     "interactions": ""
@@ -71,6 +95,94 @@
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "46c7d098-78a3-4e4a-a898-846929b51eda",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos1",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "right",
+                    "id": "76b69a12-e53e-4f06-a923-e3444ee67f4f",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos1",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "bd350e95-b5d4-4a68-b242-f228ae2b89a6",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos2",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "fbafdbb9-2025-430a-8fb0-72631dc28c1f",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos2",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "74d6dd7b-922f-42d6-ae34-e36e0d25aaea",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos3",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "609488ff-64e7-4bbd-baf5-1115a7190e72",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos3",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "3b05a115-d7c3-4d7a-b870-a11e5e17a295",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos4",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "down",
+                    "id": "9e4c8ca8-903d-4a7c-a944-c235e7694387",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TeleportPos4",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

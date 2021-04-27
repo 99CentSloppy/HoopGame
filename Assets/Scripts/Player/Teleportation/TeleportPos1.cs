@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Reset : MonoBehaviour
+public class TeleportPos1 : MonoBehaviour
 {
     private InputHandler inputHandler;
 
-    public Vector3 resetPosition;
-    public void HandleReset()
+    public Vector3 teleportPosition1;
+    public void HandleTeleportation1()
     {
-        if (inputHandler.resetSpace)
+        if (inputHandler.teleportPos1)
         {
-            transform.position = resetPosition;
-        } 
-
+            transform.position = teleportPosition1;
+        }
     }
     void Start()
     {
@@ -23,6 +22,6 @@ public class Reset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleReset();
+        HandleTeleportation1();
     }
 }
