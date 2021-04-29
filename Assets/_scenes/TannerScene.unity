@@ -240,7 +240,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611378793}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -658,12 +658,12 @@ GameObject:
   - component: {fileID: 914970248}
   - component: {fileID: 914970247}
   - component: {fileID: 914970246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!64 &914970246
 MeshCollider:
@@ -845,12 +845,12 @@ GameObject:
   - component: {fileID: 1572519859}
   - component: {fileID: 1572519858}
   - component: {fileID: 1572519857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Court
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1572519856
 Transform:
@@ -1089,7 +1089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852571152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.28, y: 3.88, z: -2.77}
+  m_LocalPosition: {x: 1.33, y: 5.111, z: -2.82}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
