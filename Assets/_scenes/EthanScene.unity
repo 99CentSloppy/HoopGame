@@ -286,8 +286,8 @@ GameObject:
   - component: {fileID: 696019467}
   - component: {fileID: 696019466}
   m_Layer: 0
-  m_Name: Position 4
-  m_TagString: Teleportation
+  m_Name: Position4
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,8 +471,8 @@ GameObject:
   - component: {fileID: 1029179898}
   - component: {fileID: 1029179897}
   m_Layer: 0
-  m_Name: Position 1
-  m_TagString: Teleportation
+  m_Name: Position1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,8 +564,8 @@ GameObject:
   - component: {fileID: 1059275798}
   - component: {fileID: 1059275797}
   m_Layer: 0
-  m_Name: Position 2
-  m_TagString: Teleportation
+  m_Name: Position2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,8 +841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1542171102}
   - component: {fileID: 1542171101}
-  - component: {fileID: 1542171103}
   - component: {fileID: 1542171107}
+  - component: {fileID: 1542171103}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -909,10 +909,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7160d5384aafa40940961b2a51bc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportPosition1: {x: 10, y: 0, z: 0}
-  teleportPosition2: {x: 0, y: 0, z: 10}
-  teleportPosition3: {x: -10, y: 0, z: 0}
-  teleportPosition4: {x: 0, y: 0, z: 10}
+  teleportPosition1: {fileID: 1029179900}
+  teleportPosition2: {fileID: 1059275800}
+  teleportPosition3: {fileID: 2119982407}
+  teleportPosition4: {fileID: 696019469}
 --- !u!1 &2119982403
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,8 +926,8 @@ GameObject:
   - component: {fileID: 2119982405}
   - component: {fileID: 2119982404}
   m_Layer: 0
-  m_Name: Position 3
-  m_TagString: Teleportation
+  m_Name: Position3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

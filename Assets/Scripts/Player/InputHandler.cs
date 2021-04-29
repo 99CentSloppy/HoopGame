@@ -53,6 +53,8 @@ public class InputHandler : MonoBehaviour
         controls.Locomotion.Shoot.performed += controls => fireDown = true;
         controls.Locomotion.Shoot.canceled += controls => fireDown = false;
 
+        controls.Locomotion.Reset.performed += controls => resetSpace = true;
+
         controls.Locomotion.Teleport.performed += controls => teleportPos1 = true;
         controls.Locomotion.Teleport.canceled += controls => teleportPos1 = false;
 
@@ -65,7 +67,7 @@ public class InputHandler : MonoBehaviour
         controls.Locomotion.Teleport.performed += controls => teleportPos4 = true;
         controls.Locomotion.Teleport.canceled += controls => teleportPos4 = false;
 
-        controls.Locomotion.Reset.performed += controls => resetSpace = true;
+
 
         //revmove "//" when the control is added 
 
