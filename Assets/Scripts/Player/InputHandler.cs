@@ -53,21 +53,19 @@ public class InputHandler : MonoBehaviour
         controls.Locomotion.Shoot.performed += controls => fireDown = true;
         controls.Locomotion.Shoot.canceled += controls => fireDown = false;
 
+        controls.Locomotion.Teleport.performed += controls => teleportPos1 = true;
+        controls.Locomotion.Teleport.canceled += controls => teleportPos1 = false;
+
+        controls.Locomotion.Teleport.performed += controls => teleportPos2 = true;
+        controls.Locomotion.Teleport.canceled += controls => teleportPos2 = false;
+
+        controls.Locomotion.Teleport.performed += controls => teleportPos3 = true;
+        controls.Locomotion.Teleport.canceled += controls => teleportPos3 = false;
+
+        controls.Locomotion.Teleport.performed += controls => teleportPos4 = true;
+        controls.Locomotion.Teleport.canceled += controls => teleportPos4 = false;
+
         controls.Locomotion.Reset.performed += controls => resetSpace = true;
-
-        controls.Locomotion.TeleportPos1.performed += controls => teleportPos1 = true;
-        controls.Locomotion.TeleportPos1.canceled += controls => teleportPos1 = false;
-
-        controls.Locomotion.TeleportPos2.performed += controls => teleportPos2 = true;
-        controls.Locomotion.TeleportPos2.canceled += controls => teleportPos2 = false;
-
-        controls.Locomotion.TeleportPos3.performed += controls => teleportPos3 = true;
-        controls.Locomotion.TeleportPos3.canceled += controls => teleportPos3 = false;
-
-        controls.Locomotion.TeleportPos4.performed += controls => teleportPos4 = true;
-        controls.Locomotion.TeleportPos4.canceled += controls => teleportPos4 = false;
-
-
 
         //revmove "//" when the control is added 
 

@@ -43,34 +43,10 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""TeleportPos1"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""143b2a00-3118-463b-81ec-89d4fe377200"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""TeleportPos2"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""f85dd838-e35d-44cf-8e67-9a7631a9fc96"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""TeleportPos3"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""654b44b1-d9f7-457a-8057-020eb78eb795"",
-                    ""expectedControlType"": ""Vector3"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""TeleportPos4"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""4d9aa048-f302-4ac5-a0b2-d40272548daa"",
-                    ""expectedControlType"": ""Vector3"",
+                    ""name"": ""Teleport"",
+                    ""type"": ""Button"",
+                    ""id"": ""32f8df4b-df9e-47b0-99d4-c40140c2d379"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -111,89 +87,56 @@ public class @Controls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""2D Vector"",
-                    ""id"": ""46c7d098-78a3-4e4a-a898-846929b51eda"",
+                    ""id"": ""a67034ac-3289-4c79-b437-2b3ba83deae5"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TeleportPos1"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""76b69a12-e53e-4f06-a923-e3444ee67f4f"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TeleportPos1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""bd350e95-b5d4-4a68-b242-f228ae2b89a6"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TeleportPos2"",
+                    ""action"": ""Teleport"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""fbafdbb9-2025-430a-8fb0-72631dc28c1f"",
+                    ""id"": ""6dc59ca7-ae65-43b9-a54d-e22e86418e1c"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Teleport"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""46c4d919-aa81-4cb0-930d-51d8416d4cd1"",
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TeleportPos2"",
+                    ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""74d6dd7b-922f-42d6-ae34-e36e0d25aaea"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TeleportPos3"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
                     ""name"": ""left"",
-                    ""id"": ""609488ff-64e7-4bbd-baf5-1115a7190e72"",
+                    ""id"": ""29b68151-1ec4-4320-8185-64e322bd2f01"",
                     ""path"": ""<Keyboard>/3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TeleportPos3"",
+                    ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""3b05a115-d7c3-4d7a-b870-a11e5e17a295"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""TeleportPos4"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""9e4c8ca8-903d-4a7c-a944-c235e7694387"",
+                    ""name"": ""right"",
+                    ""id"": ""67f1ced1-0c81-4679-98d7-a7223c8fe266"",
                     ""path"": ""<Keyboard>/4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""TeleportPos4"",
+                    ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -207,10 +150,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Locomotion_Look = m_Locomotion.FindAction("Look", throwIfNotFound: true);
         m_Locomotion_Reset = m_Locomotion.FindAction("Reset", throwIfNotFound: true);
         m_Locomotion_Shoot = m_Locomotion.FindAction("Shoot", throwIfNotFound: true);
-        m_Locomotion_TeleportPos1 = m_Locomotion.FindAction("TeleportPos1", throwIfNotFound: true);
-        m_Locomotion_TeleportPos2 = m_Locomotion.FindAction("TeleportPos2", throwIfNotFound: true);
-        m_Locomotion_TeleportPos3 = m_Locomotion.FindAction("TeleportPos3", throwIfNotFound: true);
-        m_Locomotion_TeleportPos4 = m_Locomotion.FindAction("TeleportPos4", throwIfNotFound: true);
+        m_Locomotion_Teleport = m_Locomotion.FindAction("Teleport", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -263,10 +203,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Locomotion_Look;
     private readonly InputAction m_Locomotion_Reset;
     private readonly InputAction m_Locomotion_Shoot;
-    private readonly InputAction m_Locomotion_TeleportPos1;
-    private readonly InputAction m_Locomotion_TeleportPos2;
-    private readonly InputAction m_Locomotion_TeleportPos3;
-    private readonly InputAction m_Locomotion_TeleportPos4;
+    private readonly InputAction m_Locomotion_Teleport;
     public struct LocomotionActions
     {
         private @Controls m_Wrapper;
@@ -274,10 +211,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Look => m_Wrapper.m_Locomotion_Look;
         public InputAction @Reset => m_Wrapper.m_Locomotion_Reset;
         public InputAction @Shoot => m_Wrapper.m_Locomotion_Shoot;
-        public InputAction @TeleportPos1 => m_Wrapper.m_Locomotion_TeleportPos1;
-        public InputAction @TeleportPos2 => m_Wrapper.m_Locomotion_TeleportPos2;
-        public InputAction @TeleportPos3 => m_Wrapper.m_Locomotion_TeleportPos3;
-        public InputAction @TeleportPos4 => m_Wrapper.m_Locomotion_TeleportPos4;
+        public InputAction @Teleport => m_Wrapper.m_Locomotion_Teleport;
         public InputActionMap Get() { return m_Wrapper.m_Locomotion; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -296,18 +230,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Shoot.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnShoot;
                 @Shoot.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnShoot;
                 @Shoot.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnShoot;
-                @TeleportPos1.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos1;
-                @TeleportPos1.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos1;
-                @TeleportPos1.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos1;
-                @TeleportPos2.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos2;
-                @TeleportPos2.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos2;
-                @TeleportPos2.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos2;
-                @TeleportPos3.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos3;
-                @TeleportPos3.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos3;
-                @TeleportPos3.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos3;
-                @TeleportPos4.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos4;
-                @TeleportPos4.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos4;
-                @TeleportPos4.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleportPos4;
+                @Teleport.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport;
+                @Teleport.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport;
+                @Teleport.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport;
             }
             m_Wrapper.m_LocomotionActionsCallbackInterface = instance;
             if (instance != null)
@@ -321,18 +246,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Shoot.started += instance.OnShoot;
                 @Shoot.performed += instance.OnShoot;
                 @Shoot.canceled += instance.OnShoot;
-                @TeleportPos1.started += instance.OnTeleportPos1;
-                @TeleportPos1.performed += instance.OnTeleportPos1;
-                @TeleportPos1.canceled += instance.OnTeleportPos1;
-                @TeleportPos2.started += instance.OnTeleportPos2;
-                @TeleportPos2.performed += instance.OnTeleportPos2;
-                @TeleportPos2.canceled += instance.OnTeleportPos2;
-                @TeleportPos3.started += instance.OnTeleportPos3;
-                @TeleportPos3.performed += instance.OnTeleportPos3;
-                @TeleportPos3.canceled += instance.OnTeleportPos3;
-                @TeleportPos4.started += instance.OnTeleportPos4;
-                @TeleportPos4.performed += instance.OnTeleportPos4;
-                @TeleportPos4.canceled += instance.OnTeleportPos4;
+                @Teleport.started += instance.OnTeleport;
+                @Teleport.performed += instance.OnTeleport;
+                @Teleport.canceled += instance.OnTeleport;
             }
         }
     }
@@ -342,9 +258,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnReset(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
-        void OnTeleportPos1(InputAction.CallbackContext context);
-        void OnTeleportPos2(InputAction.CallbackContext context);
-        void OnTeleportPos3(InputAction.CallbackContext context);
-        void OnTeleportPos4(InputAction.CallbackContext context);
+        void OnTeleport(InputAction.CallbackContext context);
     }
 }
