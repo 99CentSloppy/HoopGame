@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/_scenes/MenuScreen.unity
@@ -12,3 +13,9 @@ EditorBuildSettings:
     path: Assets/_scenes/DavinScene/DavinCourt.unity
     guid: 6d22dcd0703fe1746841177e78d8cfe3
   m_configObjects: {}
+=======
+  m_Scenes: []
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 343342f19e519eb4898d36f2aa9f9528,
+      type: 2}
+>>>>>>> EthanBringhurst
