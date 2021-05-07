@@ -16,9 +16,10 @@ public class InputHandler : MonoBehaviour
     public bool teleportPos2 = false;
     public bool teleportPos3 = false;
     public bool teleportPos4 = false;
+    public bool resetSpace = false;
     public bool fireDown = false;
     public bool aimDown = false;
-    public bool resetSpace = false;
+    
 
     private void Awake()
     {
@@ -54,18 +55,19 @@ public class InputHandler : MonoBehaviour
         controls.Locomotion.Shoot.canceled += controls => fireDown = false;
 
         controls.Locomotion.Reset.performed += controls => resetSpace = true;
+        controls.Locomotion.Reset.canceled += controls => resetSpace = false;
 
-        controls.Locomotion.Teleport.performed += controls => teleportPos1 = true;
-        controls.Locomotion.Teleport.canceled += controls => teleportPos1 = false;
+        controls.Locomotion.Teleport1.performed += controls => teleportPos1 = true;
+        controls.Locomotion.Teleport1.canceled += controls => teleportPos1 = false;
 
-        controls.Locomotion.Teleport.performed += controls => teleportPos2 = true;
-        controls.Locomotion.Teleport.canceled += controls => teleportPos2 = false;
+        controls.Locomotion.Teleport2.performed += controls => teleportPos2 = true;
+        controls.Locomotion.Teleport2.canceled += controls => teleportPos2 = false;
 
-        controls.Locomotion.Teleport.performed += controls => teleportPos3 = true;
-        controls.Locomotion.Teleport.canceled += controls => teleportPos3 = false;
+        controls.Locomotion.Teleport3.performed += controls => teleportPos3 = true;
+        controls.Locomotion.Teleport3.canceled += controls => teleportPos3 = false;
 
-        controls.Locomotion.Teleport.performed += controls => teleportPos4 = true;
-        controls.Locomotion.Teleport.canceled += controls => teleportPos4 = false;
+        controls.Locomotion.Teleport4.performed += controls => teleportPos4 = true;
+        controls.Locomotion.Teleport4.canceled += controls => teleportPos4 = false;
 
 
 

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Every position has to have a different action
 public class TeleportPos : MonoBehaviour
 {
     [SerializeField]
@@ -12,6 +14,8 @@ public class TeleportPos : MonoBehaviour
     private Transform teleportPosition3;
     [SerializeField]
     private Transform teleportPosition4;
+    [SerializeField]
+    private Transform resetPosition;
 
     private InputHandler inputHandler;
   
@@ -44,6 +48,15 @@ public class TeleportPos : MonoBehaviour
             transform.position = teleportPosition4.position;
         }
     }
+
+    public void HandleReset()
+    {
+        if (inputHandler.resetSpace)
+        {
+            transform.position = resetPosition.position;
+        }
+    }
+
     void Start()
     {
         inputHandler = InputHandler.instance;
@@ -55,5 +68,6 @@ public class TeleportPos : MonoBehaviour
             HandleTeleportation2();
             HandleTeleportation3();
             HandleTeleportation4();
+            HandleReset();
         }
 }

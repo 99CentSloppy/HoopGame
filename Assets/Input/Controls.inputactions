@@ -30,9 +30,33 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Teleport",
+                    "name": "Teleport1",
                     "type": "Button",
                     "id": "32f8df4b-df9e-47b0-99d4-c40140c2d379",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Teleport2",
+                    "type": "Button",
+                    "id": "1e0307a1-b895-47a0-aeac-4f7943a16747",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Teleport3",
+                    "type": "Button",
+                    "id": "7b5aa28a-907c-42c2-b81e-8bd7b5d2ecd5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Teleport4",
+                    "type": "Button",
+                    "id": "2861aeae-f38d-4771-8343-b07671904e6d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -73,59 +97,48 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "a67034ac-3289-4c79-b437-2b3ba83deae5",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Teleport",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "6dc59ca7-ae65-43b9-a54d-e22e86418e1c",
+                    "name": "",
+                    "id": "b920ab21-6737-4e7a-8126-57cc590a756b",
                     "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport",
+                    "action": "Teleport1",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "down",
-                    "id": "46c4d919-aa81-4cb0-930d-51d8416d4cd1",
+                    "name": "",
+                    "id": "a51f4950-fd1a-4ce2-8720-636e0e5602b9",
                     "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport",
+                    "action": "Teleport2",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "left",
-                    "id": "29b68151-1ec4-4320-8185-64e322bd2f01",
+                    "name": "",
+                    "id": "cb92c493-897e-4305-97c6-8b4b793fda4f",
                     "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport",
+                    "action": "Teleport3",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "right",
-                    "id": "67f1ced1-0c81-4679-98d7-a7223c8fe266",
+                    "name": "",
+                    "id": "4121f443-ecee-4a8f-b9d2-3e617e98a919",
                     "path": "<Keyboard>/4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport",
+                    "action": "Teleport4",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }
