@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1542171102}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!81 &126965701
 AudioListener:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {x: 0, y: 0}
-  look: {x: 0, y: 0}
+  look: {x: 0, y: 0, z: 0}
   teleportPos1: 0
   teleportPos2: 0
   teleportPos3: 0
@@ -656,7 +656,6 @@ GameObject:
   - component: {fileID: 1066200347}
   - component: {fileID: 1066200346}
   - component: {fileID: 1066200345}
-  - component: {fileID: 1066200344}
   m_Layer: 0
   m_Name: Basketball
   m_TagString: Untagged
@@ -664,18 +663,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1066200344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066200343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e25a162700d8ec4d90839814009328c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &1066200345
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -748,7 +735,7 @@ Transform:
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1542171102}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350434499
 GameObject:
@@ -921,8 +908,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 126965700}
   - {fileID: 1066200348}
+  - {fileID: 126965700}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

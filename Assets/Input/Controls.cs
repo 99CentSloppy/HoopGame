@@ -73,6 +73,14 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Throw"",
+                    ""type"": ""Button"",
+                    ""id"": ""b461b903-a6e1-45d5-85f8-8751ca3936d6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -152,6 +160,17 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""action"": ""Teleport4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a9cd56ae-b744-4c3b-beaf-e73aa6cb5816"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Throw"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -167,6 +186,7 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Locomotion_Teleport2 = m_Locomotion.FindAction("Teleport2", throwIfNotFound: true);
         m_Locomotion_Teleport3 = m_Locomotion.FindAction("Teleport3", throwIfNotFound: true);
         m_Locomotion_Teleport4 = m_Locomotion.FindAction("Teleport4", throwIfNotFound: true);
+        m_Locomotion_Throw = m_Locomotion.FindAction("Throw", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -223,6 +243,7 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Locomotion_Teleport2;
     private readonly InputAction m_Locomotion_Teleport3;
     private readonly InputAction m_Locomotion_Teleport4;
+    private readonly InputAction m_Locomotion_Throw;
     public struct LocomotionActions
     {
         private @Controls m_Wrapper;
@@ -234,6 +255,7 @@ public class @Controls : IInputActionCollection, IDisposable
         public InputAction @Teleport2 => m_Wrapper.m_Locomotion_Teleport2;
         public InputAction @Teleport3 => m_Wrapper.m_Locomotion_Teleport3;
         public InputAction @Teleport4 => m_Wrapper.m_Locomotion_Teleport4;
+        public InputAction @Throw => m_Wrapper.m_Locomotion_Throw;
         public InputActionMap Get() { return m_Wrapper.m_Locomotion; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -264,6 +286,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Teleport4.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport4;
                 @Teleport4.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport4;
                 @Teleport4.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnTeleport4;
+                @Throw.started -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnThrow;
+                @Throw.performed -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnThrow;
+                @Throw.canceled -= m_Wrapper.m_LocomotionActionsCallbackInterface.OnThrow;
             }
             m_Wrapper.m_LocomotionActionsCallbackInterface = instance;
             if (instance != null)
@@ -289,6 +314,9 @@ public class @Controls : IInputActionCollection, IDisposable
                 @Teleport4.started += instance.OnTeleport4;
                 @Teleport4.performed += instance.OnTeleport4;
                 @Teleport4.canceled += instance.OnTeleport4;
+                @Throw.started += instance.OnThrow;
+                @Throw.performed += instance.OnThrow;
+                @Throw.canceled += instance.OnThrow;
             }
         }
     }
@@ -302,5 +330,6 @@ public class @Controls : IInputActionCollection, IDisposable
         void OnTeleport2(InputAction.CallbackContext context);
         void OnTeleport3(InputAction.CallbackContext context);
         void OnTeleport4(InputAction.CallbackContext context);
+        void OnThrow(InputAction.CallbackContext context);
     }
 }

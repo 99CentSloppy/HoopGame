@@ -10,7 +10,7 @@ public class InputHandler : MonoBehaviour
 
     public Vector2 move;
 
-    public Vector2 look;
+    public Vector3 look;
 
     public bool teleportPos1 = false;
     public bool teleportPos2 = false;

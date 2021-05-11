@@ -16,5 +16,3 @@ public class ThrowBall : MonoBehaviour
         
     }
 }
-
-//Character as start position
