@@ -69,12 +69,5 @@ public class InputHandler : MonoBehaviour
         controls.Locomotion.Teleport4.performed += controls => teleportPos4 = true;
         controls.Locomotion.Teleport4.canceled += controls => teleportPos4 = false;
 
-
-
-        //revmove "//" when the control is added 
-
-        // controls.Locomotion.Aim.performed += controls => aimDown = true;
-        // controls.Locomotion.Aim.canceled += controls => aimDown = false;
-
     }
 }
