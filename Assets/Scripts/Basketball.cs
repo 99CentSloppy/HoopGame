@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Basketball : MonoBehaviour
+public class Basketball : MonoBehaviour
 {
     protected InputHandler input;
 
@@ -46,7 +46,10 @@ public abstract class Basketball : MonoBehaviour
         originalRotation = transform.localRotation;
     }
 
-    protected abstract void CheckForFire();
+    protected void CheckForFire()
+    {
+
+    }
 
     protected void Shoot()
     {
