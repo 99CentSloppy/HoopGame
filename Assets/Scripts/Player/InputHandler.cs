@@ -17,10 +17,8 @@ public class InputHandler : MonoBehaviour
     public bool teleportPos3 = false;
     public bool teleportPos4 = false;
     public bool resetSpace = false;
-    public bool fireDown = false;
-    public bool aimDown = false;
-    
-
+    public bool fireBall = false;
+   
     private void Awake()
     {
         if (instance != null)
@@ -51,8 +49,8 @@ public class InputHandler : MonoBehaviour
      
         controls.Locomotion.Look.performed += controls => look = controls.ReadValue<Vector2>();
 
-        controls.Locomotion.Shoot.performed += controls => fireDown = true;
-        controls.Locomotion.Shoot.canceled += controls => fireDown = false;
+        controls.Locomotion.Throw.performed += controls => fireBall = true;
+        controls.Locomotion.Throw.canceled += controls => fireBall = false;
 
         controls.Locomotion.Reset.performed += controls => resetSpace = true;
         controls.Locomotion.Reset.canceled += controls => resetSpace = false;
