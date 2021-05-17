@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        Vector3 fireBall = new Vector3(0, 0, speed * Time.deltaTime);
+        Vector3 fireBall = new Vector3(0, 0, 0 * Time.deltaTime);
         transform.Translate(fireBall);
     }
 }
